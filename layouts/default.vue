@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavBar />
     <slot />
   </div>
 </template>
@@ -9,3 +10,6 @@ export default {
   name: "LayoutDefault",
 };
 </script>
+<style lang="scss" scoped>
+@import "default";
+</style>
