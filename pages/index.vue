@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <LeftPanel />
-    <nuxt-link to="/rolety">Przechodzimy na rolety</nuxt-link>
+  <div class="MainPage__main-container">
+    <CenterPanel class="MainPage__center-panel" />
   </div>
 </template>

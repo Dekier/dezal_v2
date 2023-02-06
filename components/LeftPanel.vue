@@ -1,5 +1,6 @@
 <template>
-  <p class="LeftPanel__main-container">jHSKrrrrrr</p>
+  <!-- <div class="LeftPanel__main-container"></div> -->
+  <div></div>
 </template>
 <style lang="scss" scoped>
 @import "LeftPanel";
