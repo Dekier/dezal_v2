@@ -1,7 +1,9 @@
 .LeftPanel{
     &__main-container{
-        width: 200px;
-        height: 400px;
+        width: 400px;
+        height: 200px;
         background-color: rgb(100, 100, 250);
+        position: fixed;
+        top: 0;
     }
 }

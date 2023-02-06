@@ -1,0 +1,26 @@
+.NavBar{
+    &__main-container{
+        height: 40px;
+        width: 100%;
+        background-color: #FFFDD0;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__logo{
+        height: 40px;
+        width: 40px;
+        background-color: red;
+        margin-left: 32px;
+    }
+    &__links-container{
+        margin-right: 32px;
+        display: flex;
+
+    }
+    &__link{
+        margin: auto 10px auto auto;
+    }
+}
