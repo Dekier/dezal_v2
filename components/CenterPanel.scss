@@ -1,16 +1,14 @@
 .CenterPanel{
     &__main-container{
-    height: auto;
-    width: 100%;
-    background-color: red;
-    margin: 40px auto auto auto;
-    display: flex;
-    flex-direction: column;
-    }
-}
-@media screen and (max-width:950px){
-    .CenterPanel__main-container
-    {
-    width: 900px;
+        height: auto;
+        width: 900px;
+        background-color: red;
+        margin: 62px auto auto ;
+        display: flex;
+        flex-direction: column;
+        @media  (max-width:950px){
+        width: 100%;
+        margin: 80px auto auto;
+        }
     }
 }

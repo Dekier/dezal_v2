@@ -1,4 +1,3 @@
 <template>
-  <div></div>
-  <nuxt-link to="/">Przechodzimy do głównej strony</nuxt-link>
+  <div><nuxt-link to="/">Przechodzimy do głównej strony</nuxt-link></div>
 </template>

@@ -15,4 +15,3 @@
 <style lang="scss" scoped>
 @import "NavBar";
 </style>
-
