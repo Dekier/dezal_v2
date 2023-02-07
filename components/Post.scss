@@ -1,8 +1,18 @@
 .PostPanel{
     &__main-container{
-    height: 250px;
-    width: 450px;
-    background-color: black;
-    margin: 16px auto auto ;
+        height: 250px;
+        width: 450px;
+        background-color: black;
+        margin: 16px auto auto ;
+        transition: background-color 1s ;
+        @media  (max-width: 950px){
+            background-color: green;
+        }
+    }
+    &__text{
+        color: white;
+        @media  (min-width: 950px){
+           visibility: hidden;
+        }
     }
 }
