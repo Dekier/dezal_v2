@@ -1,3 +1,9 @@
 <template>
-  <div><nuxt-link to="/">Przechodzimy do głównej strony</nuxt-link></div>
+  <div class="Rolety__main-container">
+    <AllegroPanel />
+  </div>
 </template>
+
+<style lang="scss" scoped>
+@import "index";
+</style>

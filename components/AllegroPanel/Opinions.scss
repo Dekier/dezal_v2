@@ -1,0 +1,134 @@
+.Opinions{
+    &__main-container{
+        padding: 24px;
+        background-color: #ffff;
+        width: 824px;
+        height: 393px;
+    }
+    &__title{
+        font-size: 25px;
+        color: #222222;
+        margin: 0 0 16px;
+    }
+    &__name{
+        font-size: 14px;
+        color: #222222;
+        font-weight: 700;
+    }
+    &__opinions-container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__score-container{
+        display: flex;
+        flex-direction: row;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        margin: 0 24px 0;
+        padding: 0 24px 8px;
+        line-height: 21px;
+        border-right: solid 1px #ddd ;
+    }
+    &__rating{
+        font-size: 30px;
+        margin: 16px 0 0 4px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__small-number{
+        font-size: 13px;
+        color: #656565;
+        margin: 0 0 0 4px;
+    }
+    &__small-span{
+        font-size: 12px;
+        color: #222222;
+        margin: 16px 0 0;
+    }
+    &__row{
+        display: inline;
+    }
+    &__informations{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__paragraph{
+        color: #656565;
+        font-size: 12px;
+        margin: 0 0 0 8px;
+        height: 16px;
+    }
+    &__informations-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        color: #008673;
+        text-decoration: none;
+    }
+    &__right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__svg-positiv{
+        :deep(svg) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__button{
+        color: #222222;
+        margin: 0 0 2px ;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        line-height: 21px;
+        width: 299px;
+    }
+    &__line{
+        margin-left: 16px;
+        width: 160px;
+        height: 4px;
+        display: flex;
+        align-self: center;
+        background-color: #ddd;
+        margin-right: 16px;
+        &--full{
+            margin-left: 16px;
+            width: 160px;
+            height: 4px;
+            background-color: #ff5a00;
+            display: flex;
+            align-self: center;
+            margin-right: 16px;
+        }
+    }
+    &__row{
+        display: flex;
+        flex-direction: row
+    }
+    &__number{
+        font-size: 12px;
+        color: #c3c3c3;
+    }
+    &__review-container{
+        border-top: 1px solid #ddd;
+        margin: 24px 0 0;
+        padding: 24px 0 0;
+        text-align: center;
+    }
+    &__review-title{
+        color: #84949f;
+        font-size: 25px;
+        margin: 0 0 16px;
+    }
+    &__review-text{
+        font-size: 14px;
+        color: #84949f;
+    }
+}
