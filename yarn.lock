@@ -6704,6 +6704,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-icons@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "nuxt-icons@npm:3.1.0"
+  dependencies:
+    "@nuxt/kit": ^3.0.0
+  checksum: 258c97675df4dafebca6328711e88f4520d1948c3042a07bc2201d5189675f8b671f0a74b523d2e02a53b130a294c35a17313624ff1a8959631a78a9193bf134
+  languageName: node
+  linkType: hard
+
 "nuxt@npm:^3.0.0":
   version: 3.0.0
   resolution: "nuxt@npm:3.0.0"
@@ -7989,6 +7998,7 @@ __metadata:
     husky: ^8.0.3
     lint-staged: ^13.1.0
     nuxt: ^3.0.0
+    nuxt-icons: ^3.1.0
     prettier: ^2.8.2
     sass: ^1.57.1
     typescript: ^4.9.4

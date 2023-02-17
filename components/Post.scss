@@ -8,11 +8,19 @@
         @media  (max-width: 950px){
             background-color: green;
         }
+        &--small{
+            height: 50px;
+            width: 100px;
+        }
     }
     &__text{
         color: white;
         @media  (min-width: 950px){
            visibility: hidden;
         }
+    }
+    &__button{
+        height: 40px;
+        background-color: yellow;
     }
 }

@@ -4,6 +4,7 @@
         width: 100%;
         background-color: #FFFDD0;
         position: fixed;
+        z-index: 1;
         top: 0;
         display: flex;
         flex-direction: row;
@@ -14,6 +15,9 @@
         width: 40px;
         background-color: red;
         margin-left: 32px;
+        img{
+            width: 40px;
+        }
     }
     &__links-container{
         margin-right: 32px;
