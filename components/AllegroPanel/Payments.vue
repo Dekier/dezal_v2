@@ -7,11 +7,7 @@
         <span class="Payments__wall">|</span>
         <a
           href="#aboutSaller"
-          class="
-            Payments__small-text
-            Payments__small-text--green
-            Payments__noDecoration
-          "
+          class="Payments__small-text Payments__small-text--green Payments__noDecoration"
           >Poleca</a
         >
       </div>
@@ -27,9 +23,9 @@
       <hr class="Payments__line" />
       <p class="Payments__paragraf">Liczba sztuk</p>
       <div class="Payments__row">
-        <button @click="minus" class="Payments__button">-</button>
-        <input class="Payments__input" v-model="count" />
-        <button @click="plus" class="Payments__button">+</button>
+        <button class="Payments__button" @click="minus">-</button>
+        <input v-model="count" class="Payments__input" />
+        <button class="Payments__button" @click="plus">+</button>
         <p class="Payments__small-text Payments__middle">z 33 sztuk</p>
       </div>
       <button class="Payments__button-orange">DODAJ DO KOSZYKA</button>

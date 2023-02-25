@@ -70,7 +70,7 @@
     <div class="Header__company-container">
       <span class="Header__company-span">ZAUFALI NAM</span>
       <div class="Header__company-logos">
-        <div class="Header__logo-container" v-for="cos in 11" :key="cos">
+        <div v-for="cos in 11" :key="cos" class="Header__logo-container">
           <nuxt-icon name="neonail" class="Header__svg-neonail" filled />
         </div>
       </div>

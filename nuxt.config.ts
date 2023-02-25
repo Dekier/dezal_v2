@@ -6,12 +6,12 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    'nuxt-icons',
+    "nuxt-icons",
+    "@nuxtjs/google-fonts",
     [
       "@pinia/nuxt",
       {
         autoImports: ["defineStore", "acceptHMRUpdate"],
-
       },
     ],
   ],
@@ -37,6 +37,12 @@ export default defineNuxtConfig({
         cache: false,
       }),
     ],
+  },
+
+  googleFonts: {
+    families: {
+      Inter: [400, 500, 600, 700],
+    },
   },
 
   runtimeConfig: {
