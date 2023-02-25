@@ -1,0 +1,79 @@
+.ContactLeftPanel{
+    &__left-panel{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        height: 100%;
+        max-width: 705px;
+        justify-content: center ;
+    }
+    &__title{
+        margin-bottom: 80px;
+        font-family: "Bitter";
+        font-size: 30px;
+        font-weight: 600;
+        color: #142c47;
+        padding-right: 50px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__strong{
+        font-weight: 900;
+        text-decoration: underline solid 3px #ff0098;
+        text-decoration-skip-ink: none;
+    }
+    &__person-data-container{
+        padding: 50px;
+        display: flex;
+        box-shadow: 0 -5px 30px 0 rgb(20 44 71 / 5%), 0 30px 50px 0 rgb(20 44 71 / 6%);
+        background-color: #fff;
+        border-radius: 20px;
+
+    }
+    &__img{
+        height: 115px;
+        width: 115px;
+    }
+    &__img-container{
+        border-radius: 190px;
+        overflow: hidden;
+        border: 5px solid #ff0098;
+        margin-right: 3.125rem;
+        width: 125px;
+        height: 125px;
+    }
+    &__person-title{
+        font-weight: 800;
+        font-size: 22px;
+        font-family: "Bitter";
+        color: #142c47;
+        margin-bottom: 30px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #142c47;
+        font-weight: 600;
+        transition: text-decoration 300ms;
+        position: relative;
+        width: max-content;
+    }
+    &__person-data{
+        display: flex;
+        flex-direction: column;
+    }
+    &__person-margin{
+        margin-top: 20px;
+    }
+    &__link-underline{
+        background-color: #ff0098;
+        margin-top: 2px;
+        height: 2px;
+        width: 0;
+        transition: width 300ms;
+    }
+    &__link:hover &__link-underline{
+        width: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+.Contact{
+    &__main-container{
+        padding: 100px 0;
+        height: 845px;
+        background-color: white;
+        width: 100%;
+        position: relative;
+        top: 87px;
+        border-bottom: 1px #f5f4f3 solid;
+    }
+    &__center-container{
+        padding: 0 10px;
+        max-width: 1410px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}

@@ -10,60 +10,67 @@
         display: flex;
         justify-content: center;
         height: 87px;
+        
     }
     &__main-container{
-        width: 1170px;
+        margin: 0 10px;
         height: 87px;
-        margin: 0 116px;
         padding: 0px 10px;
         z-index: 9;
+        max-width: 1410px;
+        width: 100%;
+        @include for-desktop-up{
+            margin: 0 116px;
+        }
     }
     &__secound-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0px;
-        width: 1150px;
         height: 87px;
-
     }
     &__links{
-        &-container{
-            display: flex;
-            height: 87px;
-        }
+        @include text(18px,#142c47,700,);
         text-decoration: none;
         padding: 0 25px;
-        color: #142c47;
         border-bottom: 2px solid transparent;
-        transition: all .3s ease-out 0s;
+        transition: background-color .3s ;
         height: inherit;
-        font-weight: 700;
         display: flex;
         align-items: center;
-        font-size: 18px;
         &:hover{
             border-color: #7946fb;
         }
     }
-    &__link-border{
-        font-weight: 700;
-        color: #142c47;
-        text-decoration: none;
-        border: 2px solid #142c47;
-        border-radius: 100px;
-        transition: all .3s ease-out 0s;
-        padding: 11px 30px;
-        text-align: center;
-        font-size: 18px;
-
+    &__links-container{
+        display: none;
+        @include for-desktop-up{
+            display: flex;
+            height: 87px;
+        }
+    }
+    &__link-contact{
+        display: none;
         &:hover{
             color: white;
             background-color:#142c47; ;
         }
+        @include for-desktop-up{
+            @include text(18px, #142c47, 700, center);
+            text-decoration: none;
+            border: 2px solid #142c47;
+            border-radius: 100px;
+            transition: background-color .3s, color .3s;
+            padding: 11px 30px;
+            display: block;
+        }
     }
     &__logo-transition{
-        transition: all .3s ease-out 0s;
+        transition: opacity .3s;
+        &:hover{
+            opacity: .5;
+        }
     }
     &__svg-logo{  
         :deep(svg) {
@@ -71,5 +78,34 @@
             height: 19px;
         }
     }
-
+    &__hamburger-container{
+        display: flex;
+        flex-direction: column;
+        @include for-desktop-up{
+            display: none;
+        }
+    }
+    &__hamburger-line{
+        margin-bottom: 5px;
+        width: 20px;
+        height: 2px;
+        border-radius: 4px;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        transition: transform 300ms ;
+        &--active-none{
+            display: none;
+            position: absolute;
+        }
+        &--active-left{
+            transform: rotate(45deg);
+            margin: 0px;
+        }
+        &--active-right{
+            position: absolute;
+            transform: rotate(-45deg);
+            margin: 0px;
+        }
+    }
 }
