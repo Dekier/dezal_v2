@@ -1,6 +1,13 @@
 <template>
   <div class="Header__main-container">
     <div class="Header__main-title-container">
+      <div class="Header__background">
+        <nuxt-icon
+          name="webmetric-logo"
+          filled
+          class="Header__svg-background"
+        />
+      </div>
       <div class="Header__secound-container">
         <div class="Header__title-container">
           <div class="Header__subtitle-container">

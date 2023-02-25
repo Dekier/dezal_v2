@@ -1,0 +1,41 @@
+.Gallery{
+    &__main-container{
+        position: relative;
+        top: 87px;
+        height:914px;
+        padding: 32px 0;
+        background-color: white;
+        border-bottom: 1px #f5f4f3 solid;
+    }
+    &__center-container{
+      max-width: 1411px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+      padding: 0 10px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+    &__title-container{
+      padding: 80px 0 50px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-align: center;
+    }
+    &__subtitle{
+      color: #ff0098;
+      font-size: 11px;
+    }
+    &__title{
+      color: #142c47;
+      font-weight: 800;
+      font-size: 36px;
+      font-family: "Bitter";
+    }
+    &__row{
+      display: flex;
+      flex-direction: row ;
+      justify-content: space-between;
+    }
+}

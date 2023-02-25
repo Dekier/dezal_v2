@@ -5,47 +5,103 @@
         background-color: #fff;
         position: relative;
         top: 87px;
+        border-bottom: 1px #f5f4f3 solid;
+        
     }
     &__main-title-container{
-    background-color: #fff;
-    padding: 120px 0;
-    height: 641px;
-    width: 100%;
-    color: black;
-    line-height: 1.5;
+        background-color: #fff;
+        padding: 60px 0;
+        height: 555px;
+        width: 100%;
+        line-height: 1.5;
+        position: relative;
+        @include for-tablet{
+             padding: 80px 0;
+             height: 555px;
+         };
+        @include for-phone-only{
+            height: 762px;
+        }
+        @include for-desktop-up{
+            padding: 120px 0;
+            height: 641px;
+        };
     }
     &__secound-container{
-        margin: 0 120px;
+        max-width: 738px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0 10px;
         height: 100%;
         color: #142C47 ;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+         @include for-tablet{
+             max-width: 962px;
+             justify-content: space-between;
+             flex-direction: row
+         }
+         @include for-desktop-up{
+            max-width: 1410px;
+        }
+        
     }
     &__subtitle-container{
+        @include text(11px, #7946fb, 700);
+        max-width: 1411px;
+        width: 100%;
         margin: 0 0 10px;
-        color: #7946fb;
-        font-weight: 700;
-        font-size: 11px;
         letter-spacing: 1.1px;
         text-transform: uppercase;
         }
     &__title{
-        font-size: 45px;
-        margin: 0 0 27px;
+        font-size: 32px;
+        margin: 0 0 19px;
+         @include for-tablet{
+             margin: 0 0 24px;
+             font-size: 40px;
+         }
+        @include for-phone-only{
+            font-size: 30px;
+        }
+        @include for-desktop-up{
+            font-size: 45px;
+            margin: 0 0 27px;
+        }
+
     }
     &__title-container{
-        width: 560px;
+        max-width: 738px;
+        width: 100%;
         height: 401px;
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 2;
+        padding: 15px;
+         @include for-tablet{
+             max-width: 450px;
+         }
+        @include for-phone-only{
+
+        }
+        @include for-desktop-up{
+            max-width: 560px;
+            height: 401px;
+        }
     }
     &__list-item{
-        font-size: 20px;
-        font-weight: 600;
+        @include text(18px,#142C47,600);
         margin: 10px 0;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 25px;
         list-style-type: none;
+        @include for-desktop-up{
+            padding: 0 0 0 30px;
+            font-size: 20px;
+        }
+        @include for-phone-only{
+            font-size: 16px;
+        }
     }
     &__list{
         list-style: none;
@@ -57,17 +113,15 @@
     &__reviews-left{
         display: flex;
         flex-direction: column;
-        font-size: 11px;
         letter-spacing: 1px;
-        color: #6a797e;
+        @include text(11px,#6a797e)
     }
     &__reviews-right{
         display: flex;
         flex-direction: column;
         margin-left: 16px;
-        font-size: 14px;
         letter-spacing: 1px;
-        color: #6a797e;
+        @include text(14px,#6a797e)
     }
     &__circle{
             :deep(svg) {
@@ -78,6 +132,20 @@
     &__row{
         display: flex;
         align-items: center;
+    }
+    &__svg-background{
+        :deep(svg){
+           width: 570px;
+           height: 493px;
+           display: none;
+           @include for-desktop-up{
+            width: 802px;
+            height: 692px
+           }
+           @include for-tablet{
+                display: block;
+           }
+        }
     }
     &__svg-logo{  
         :deep(svg) {
@@ -99,9 +167,14 @@
     }
     &__svg-neonail{
         :deep(svg){
-        height: 35px;
+        height: 25px;
         width: auto;
-        margin: 15px 50px;
+        padding: 15 0;
+        margin: 15px 30px;
+        @include for-desktop-up{
+            margin: 15px 50px;
+            height: 35px;
+        }
         }
     }
     &__span{
@@ -109,22 +182,53 @@
     }
     &__title-links-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        @include for-tablet{
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include for-phone-only{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
     }
     &__title-links{
-        color: #142C47 ;
-        font-weight: 800;
-        width: 400px;
-        height: 100px;
-        margin: 5px 0;
-        padding: 30px;
+        width: 350px;
+        height: 80px;
+        margin: 5px ;
+        padding: 20px 10px 20px 20px;
         text-decoration: none;
         line-height: 27px;
-        font-size: 18px;
         background-color: #fff;
         box-shadow: 0 -5px 30px 0 rgb(20 44 71 / 3%), 0 50px 50px 0 rgb(20 44 71 / 6%);
         border-radius: 20px;
-        transition: all .3s ease-out 0s;
+        transition: transform .3s ;
+        display: flex;
+        align-items: center;
+        @include text (14px, #142C47,800,);
+        @include for-tablet{
+            position: relative;
+            z-index: 2;
+            margin: 5px 0;
+            padding: 30px;
+            font-size: 18px;
+        }
+        @include for-phone-only{
+            padding: 30px 20px;
+            margin: 5px 0;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 121px;
+            flex-direction: column;
+        }
+        @include for-desktop-up{
+            width: 400px;
+            padding: 25px;
+            height: 100px;
+        }
     }
     &__title-links:hover{
         transform: translateX(10px);
@@ -134,18 +238,19 @@
     }
     &__company-container{
     text-align: center;
-    height: 376px;
-    margin: 32px 120px;
+    max-width: 1410px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 10px;
 
     }
     &__company-span{
-        text-align: center;
         display: block;
-        color: #142c47;
-        font-size: 11px;
-        font-weight: 700; 
         margin: 0 0 15px;
+        @include text(11px,#142c47, 700, center);
+        @include for-desktop-up{
+           font-size: 14px;
+        }
     }
     &__company-logos{
         display: flex;
@@ -155,6 +260,16 @@
     }
     &__logo-container{
         padding: 15px 0;
+        margin: 10px 0;
+    }
+    &__background{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        text-shadow: -20px -20px 40px rgb(0 0 0 / 5%);
+        @include text(12px, #fff,800, center)
     }
 
 }
