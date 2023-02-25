@@ -2,9 +2,9 @@
   <div class="Parameters__main-container">
     <h2 class="Parameters__title">Parametry</h2>
     <div
-      class="Parameters__row"
       v-for="(data, index) in parametersList"
       :key="data.label"
+      class="Parameters__row"
       :class="{ 'Parameters__row--gray': index % 2 === 0 }"
     >
       {{ index }}

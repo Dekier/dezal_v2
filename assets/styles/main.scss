@@ -9,7 +9,6 @@ html {
 }
 html,
 body {
-  font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
   background-color: $background-page;
@@ -20,6 +19,10 @@ body {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+* {
+  font-family: "Inter", sans-serif;
 }
 
 button {

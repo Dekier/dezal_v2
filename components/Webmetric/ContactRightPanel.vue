@@ -27,7 +27,9 @@
       <input type="button" value="Wyślij" class="ContactRightPanel__button" />
       <div class="ContactRightPanel__footer-data">
         <span>Wysyłając wiadomość wyrażasz zgodę na</span>
-        <nuxt-link to="/kontakt" class="ContactRightPanel__footer-link">przetwarzanie danych osobowych.</nuxt-link>
+        <nuxt-link to="/kontakt" class="ContactRightPanel__footer-link"
+          >przetwarzanie danych osobowych.</nuxt-link
+        >
       </div>
     </div>
   </div>

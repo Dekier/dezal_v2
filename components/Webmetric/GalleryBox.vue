@@ -3,11 +3,15 @@
     <div class="GalleryBox__dark-shadow"></div>
     <img :src="galleryBoxData.srcImage" class="GalleryBox__photo" />
     <div class="GalleryBox__title-container">
-      <span class="GalleryBox__title" :style="{ color: galleryBoxData.color }">{{ galleryBoxData.title }}</span>
+      <span
+        class="GalleryBox__title"
+        :style="{ color: galleryBoxData.color }"
+        >{{ galleryBoxData.title }}</span
+      >
       <p class="GalleryBox__information">
         Treść o projektowaniu użytecznych interfejsów
       </p>
-</div>
+    </div>
   </div>
 </template>
 <script setup>

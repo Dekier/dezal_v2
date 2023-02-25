@@ -21,7 +21,7 @@
         <h1 class="ContactLeftPanel__person-title">Filip Adamus</h1>
         <nuxt-link to="/kontakt" class="ContactLeftPanel__link"
           ><span>f.adamus@webmetric.com</span>
-          <div class="ContactLeftPanel__link-underline"/>
+          <div class="ContactLeftPanel__link-underline" />
         </nuxt-link>
         <nuxt-link
           to="/kontakt"
