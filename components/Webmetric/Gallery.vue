@@ -15,8 +15,14 @@
     </div>
   </div>
 </template>
-<script setup>
-const galleryBoxData = ref([
+<script setup lang="ts">
+interface GalleryBoxData {
+  srcImage: string;
+  title: string;
+  label: string;
+  color: string;
+}
+const galleryBoxData = ref<GalleryBoxData[]>([
   {
     srcImage: "/assets/img/Gallery1.jpg",
     title: "UX/UI DESIGN",

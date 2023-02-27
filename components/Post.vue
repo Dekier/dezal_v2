@@ -17,8 +17,8 @@
     <p>Count is: {{ count }}</p>
   </div>
 </template>
-<script setup>
-const count = ref(false);
+<script setup lang="ts">
+const count = ref<boolean>(false);
 const switchClass = () => {
   count.value = !count.value;
 };
