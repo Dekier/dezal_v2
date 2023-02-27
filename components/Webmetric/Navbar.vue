@@ -43,8 +43,8 @@
     </div>
   </div>
 </template>
-<script setup>
-const isActiveHamburger = ref(false);
+<script setup lang="ts">
+const isActiveHamburger = ref<boolean>(false);
 const changeActiveHamburger = () => {
   isActiveHamburger.value = !isActiveHamburger.value;
 };

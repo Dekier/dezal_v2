@@ -2,10 +2,10 @@
   <div>
     <WebmetricHeader />
     <WebmetricCaseStudy />
-    <!-- <WebmetricConsultation />
+    <WebmetricConsultation />
     <WebmetricGallery />
-    <WebmetricContact />
-    <WebmetricFaq />  -->
+    <!-- <WebmetricContact />
+    <WebmetricFaq />   -->
   </div>
 </template>
 

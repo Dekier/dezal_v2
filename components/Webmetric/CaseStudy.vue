@@ -17,18 +17,31 @@
     </div>
   </div>
 </template>
-<script setup>
-const caseStudyData = ref([
+<script setup lang="ts">
+interface CaseStudyData {
+  srcLogo: string;
+  srcImage: string;
+  title: string;
+  label: string;
+  baranek?: string;
+}
+interface TakData {
+  siemanko: number;
+  oskar: boolean;
+  nie: string;
+}
+const caseStudyData = ref<CaseStudyData[]>([
   {
     srcLogo: "casestudy-logo1",
     srcImage: "/assets/img/casestudy1.png",
     title: "Projekt UI/UX aplikacji webowej chatbota",
     label: "Aplikacje / Projektowanie UI",
+    baranek: "oskar",
   },
   {
     srcLogo: "casestudy-logo2",
     srcImage: "/assets/img/casestudy2.png",
-    title: "Projekt aplikacji dla uczelni wyższej",
+    title: "Projekt aplikacji dla uczelni wyższej ",
     label: "Aplikacje / Projektowanie UI",
   },
   {
@@ -38,6 +51,11 @@ const caseStudyData = ref([
     label: "Aplikacje / Badania UX",
   },
 ]);
+const tak = ref<TakData>({
+  siemanko: 12342,
+  oskar: true,
+  nie: "tak",
+});
 </script>
 <style lang="scss" scoped>
 @import "CaseStudy";

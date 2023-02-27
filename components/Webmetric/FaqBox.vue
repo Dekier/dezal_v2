@@ -32,8 +32,8 @@
     </div>
   </div>
 </template>
-<script setup>
-const isActiveButton = ref(false);
+<script setup lang="ts">
+const isActiveButton = ref<boolean>(false);
 const changeActiveButton = () => {
   isActiveButton.value = !isActiveButton.value;
 };
