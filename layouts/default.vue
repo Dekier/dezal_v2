@@ -1,8 +1,8 @@
 <template>
   <div>
     <NavBar />
+    <NavBarContact />
     <slot />
-    <LeftPanel />
   </div>
 </template>
 
