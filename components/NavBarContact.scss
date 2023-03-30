@@ -1,0 +1,57 @@
+.NavBarContact {
+  &__main-container {
+    height: 60px;
+    background-color: $black400;
+    display: flex;
+    justify-content: center;
+    color: $white;
+  }
+  &__center-container {
+    max-width: 1440px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 38px;
+  }
+  &__text {
+    @include text(16px, $white, 400, left);
+    margin-right: 36px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+  }
+  &__left-container {
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+  }
+  &__link {
+    @include text(16px, $white, 400, left);
+    text-decoration: none;
+    line-height: 140%;
+    padding: 11px 10px;
+    letter-spacing: -0.03em;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    &:hover {
+      color: $yellow500;
+      border: 1px solid $yellow500;
+    }
+  }
+  &__link-margin {
+    margin-right: 36px;
+  }
+  &__right-container {
+    @include text(16px, $white, 400, left);
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+  }
+}

@@ -1,30 +1,133 @@
-.NavBar{
-    &__main-container{
-        height: 40px;
-        width: 100%;
-        background-color: #FFFDD0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+.NavBar {
+  &__main-container {
+    background-color: $white;
+    height: 76px;
+    top: 60px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+    background-color: rgba($color: $white, $alpha: 0.72);
+    transition: box-shadow 300ms;
+    z-index: 10;
+    &--active {
+      position: fixed;
+      top: 0px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     }
-    &__logo{
-        height: 40px;
-        width: 40px;
-        background-color: red;
-        margin-left: 32px;
-        img{
-            width: 40px;
-        }
+  }
+  &__center-container {
+    max-width: 1440px;
+    width: 100%;
+    height: 76px;
+    color: $white;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    :deep(svg) {
+      width: 132px;
+      height: 56px;
+      line-height: 140%;
     }
-    &__links-container{
-        margin-right: 32px;
-        display: flex;
+  }
+  &__arrow {
+    :deep() {
+      width: 12px;
+      height: 7px;
+    }
+    :deep(svg) {
+      height: 7px;
+      transition: transform 600ms;
+    }
+    &--active {
+      :deep(svg) {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__icon-container {
+    width: 12px;
+    height: 7px;
+  }
+  &__left-panel {
+    display: flex;
+    height: 100%;
+  }
+  &__link {
+    @include text(16px, $black300, 400);
+    text-decoration: none;
+    line-height: 140%;
+    padding: 11px 20px;
+    letter-spacing: -0.03em;
+    margin-right: 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    display: flex;
+    height: 44px;
+    &:hover {
+      border: 1px solid $black300;
+    }
+    &--active {
+      font-weight: 500;
+      border: 1px solid $black400;
+    }
 
+    &:focus {
+      border: 2px solid $black300;
+      padding: 9px 19px;
     }
-    &__link{
-        margin: auto 10px auto auto;
+  }
+  &__link-yellow {
+    @include buttonFullYellow;
+  }
+
+  &__label {
+    justify-self: flex-end;
+    position: relative;
+  }
+  &__svg {
+    position: absolute;
+    display: inline-block;
+    left: 11px;
+    top: 12px;
+    :deep(svg) {
+      width: 17.49px;
+      height: 17.49px;
     }
+  }
+  &__input {
+    width: 325px;
+    height: 44px;
+    padding: 10px 16px 10px 42px;
+    border: 1px solid $gray400;
+    border-radius: 8px;
+    transition: width 300ms;
+    &:hover {
+      border: 1px solid $black100;
+      color: $black100;
+    }
+    &:focus {
+      outline: none;
+      width: 404px;
+      border: 1px solid $black100;
+      box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.01),
+        0px 5px 3px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.09),
+        0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__absolute {
+    position: relative;
+  }
+  &__right-panel {
+    display: flex;
+  }
+  &__links-container {
+    display: flex;
+    margin: 0 90px 0 auto;
+  }
 }

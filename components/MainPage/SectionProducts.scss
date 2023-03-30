@@ -1,0 +1,30 @@
+.SectionProducts {
+  &__main-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  &__title {
+    @include text(68px, $black, 700);
+    line-height: 105%;
+    width: 868px;
+    letter-spacing: -0.03em;
+    margin: 0 0 100px 0;
+  }
+  &__center-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left-panel {
+    max-width: 555px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__right-panel {
+    max-width: 670px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

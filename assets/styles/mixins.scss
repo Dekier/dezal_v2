@@ -34,3 +34,25 @@
   font-weight: $weight;
   text-align: $align;
 }
+@mixin buttonFullYellow() {
+  @include text(16px, $black300, 400);
+  border: 1px solid $yellow500;
+  text-decoration: none;
+  padding: 11px 20px;
+  letter-spacing: 0.03em;
+  line-height: 140%;
+  border-radius: 8px;
+  outline: none;
+  height: 44px;
+  // margin: auto 89.5px auto 0;
+  &:hover {
+    background: $yellow600;
+  }
+  &:focus {
+    border: 2px solid $yellow500;
+    padding: 9px 19px;
+  }
+  &--active {
+    background-color: $yellow500;
+  }
+}
